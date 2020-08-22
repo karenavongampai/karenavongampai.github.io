@@ -1,0 +1,179 @@
+html,
+body {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Cabin', sans-serif;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    background-color: white;
+    line-height: 1.75;
+}
+
+hr {
+    background-color: #dfe4ea;
+}
+
+
+/* Link functionality */
+
+a:link {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+
+/* Project gallery image sizing/styling */
+
+.img-grid {
+    width: 100%;
+    height: auto;
+    border-radius: 5px 5px 0px 0px;
+}
+
+
+/* Individual project card element */
+
+.grid {
+    max-width: auto;
+    height: auto;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #DFDFDF;
+    border-radius: 6px;
+}
+
+.grid-p {
+    font-size: 14px;
+    color: #6F6F6F;
+}
+
+.p {
+    line-height: 150%;
+}
+
+
+/* About Page */
+
+.img-round {
+    border-radius: 6px;
+}
+
+@media (min-width: 993px) {
+    #mobile-nav {
+        display: none;
+    }
+    .content-mobile {
+        display: none;
+    }
+    #about-web-img {
+        object-fit: cover;
+        width: 600px;
+        height: auto;
+    }
+    #web-nav {
+        background-color: #F7F7F7;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 6%;
+        position: fixed;
+        height: 100%;
+        display: block;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    #web-nav li {
+        color: #000000;
+        list-style-type: none;
+        margin-left: 0;
+        padding-top: 10px;
+        list-style-type: none;
+        text-decoration: none;
+    }
+    #web-nav ul {
+        padding-left: 0;
+        padding-bottom: 20px;
+        list-style-type: none;
+    }
+    #web-nav a {
+        color: #000000;
+        text-decoration: none;
+        background-image: linear-gradient(#000000, #000000);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    #web-nav>a:hover,
+    #web-nav>a:focus {
+        background-size: 100% 2px;
+    }
+    .content-web {
+        padding-left: 25%;
+        padding-right: 0%;
+    }
+    .case-study-content {
+        padding-left: 15%;
+        width: 72%;
+    }
+    .name-statement {
+        color: #000000;
+        font-weight: 400;
+    }
+    .job-title {
+        color: #000000;
+    }
+}
+
+@media (max-width: 992px) {
+    #web-nav {
+        display: none;
+    }
+    .content-web {
+        display: none;
+    }
+    .content-mobile {
+        width: 90%;
+    }
+    #about-mobile-img {
+        width: 100%;
+    }
+    #mobile-nav {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #27282C;
+        color: white;
+        text-align: center;
+    }
+    #mobile-nav a {
+        color: #dfe4ea;
+    }
+    #mobile-nav p {
+        color: #dfe4ea;
+    }
+    #mobile-nav h6 {
+        text-align: center;
+    }
+}
+
+#mobile-nav h6 {
+    text-align: center;
+}
