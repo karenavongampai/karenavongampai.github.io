@@ -71,10 +71,6 @@ a:hover {
 
 /* About Page */
 
-.img-round {
-    border-radius: 6px;
-}
-
 @media (min-width: 993px) {
     #mobile-nav {
         display: none;
@@ -92,6 +88,7 @@ a:hover {
         padding-left: 5%;
         padding-right: 5%;
         padding-top: 6%;
+        padding-bottom: 0px;
         position: fixed;
         height: 100%;
         display: block;
@@ -159,21 +156,25 @@ a:hover {
     #mobile-nav {
         padding-top: 15px;
         padding-bottom: 15px;
-        background-color: #27282C;
-        color: white;
+        background-color: #f7f7f7;
+        color: black;
         text-align: center;
     }
     #mobile-nav a {
-        color: #dfe4ea;
+        color: black;
     }
     #mobile-nav p {
-        color: #dfe4ea;
+        margin-bottom: 0;
+        font-weight: 300;
+        color: black;
     }
     #mobile-nav h6 {
         text-align: center;
     }
-}
-
-#mobile-nav h6 {
-    text-align: center;
+    .case-study-content {
+        width: 90%;
+    }
+    #mobile-nav h6 {
+        text-align: center;
+    }
 }
