@@ -16,25 +16,19 @@
 </head>
 
 <body>
-    <!-- Vertical Navigation -->
-    <div id="web-nav">
-        <h4 class="name-statement"><b>Karena<br />Vongampai</b></h4>
-        <p class="job-title">Product Designer</p>
-        <div class="pt-2"></div>
-        <!-- <hr /> -->
+    <!-- Navigation for Desktop -->
+    <nav id="web-nav">
+        <h4 class="font-weight-bold">Karena<br />Vongampai</h4>
+        <p>Product Designer</p>
         <ul class="nav-bar pt-3">
-            <a href="index.html">
-                <li>
-                    <h6>Projects</h6>
-                </li>
-            </a>
-            <a href="about.html">
-                <li>
-                    <h6>About</h6>
-                </li>
-            </a>
+            <li>
+                <a href="index.html">Projects</a>
+            </li>
+            <li>
+                <a href="about.html">About</a>
+            </li>
         </ul>
-    </div>
+    </nav>
 
     <div class="container py-5 case-study-content">
         <div class="row pt-3">
@@ -147,4 +141,15 @@
             </div>
         </div>
     </div>
+
+    <!-- Navigation for Mobile -->
+    <nav id="mobile-nav" class="fixed-bottom container-fluid mt-5">
+        <div class="row">
+            <a class="col-4 mb-0 text-center text-dark" href="index.html">Projects</a>
+            <a class="col-4 mb-0 text-center text-dark" href=" about.html ">About</a>
+            <a class="col-4 mb-0 text-center text-dark" href="assets/images/home/karenavongampai-resume.pdf" target="_blank" download>Resume</a>
+        </div>
+    </nav>
 </body>
+
+</html>
