@@ -26,6 +26,28 @@ a:hover {
     text-decoration: none;
 }
 
+/* Navbar */
+nav {
+    background-color: #f7f7f7;
+}
+
+nav a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+nav a:hover, .active {
+    background-size: 100% 2px;
+}
+
+nav a:active {
+    background-image: #f7f7f7;
+    color: #f7f7f7;
+}
 
 /* Project gallery image sizing/styling */
 .gallery-border {
@@ -33,7 +55,6 @@ a:hover {
     height: auto;
     width: 100%;
 }
-
 
 /* Individual project card element */
 .grid {
@@ -55,29 +76,15 @@ a:hover {
     #about-mobile-img {
         width: 100%;
     }
-    #mobile-intro {
+    #intro {
         padding-bottom: 100px;
         padding-top: 200px;
     }
-    #mobile-nav {
-        padding-top: 15px;
-        padding-bottom: 15px;
-        background-color: #f7f7f7;
-    }
-    #mobile-nav a {
-        font-weight: 300;
-    }
-    #web-nav {
-        display: none;
-    }
-    .content-mobile {
+    .content-spacing, .homepage-spacing {
         width: 90%;
     }
-    .content-web {
+    .web-view {
         display: none;
-    }
-    .case-study-content {
-        width: 90%;
     }
 }
 
@@ -85,60 +92,20 @@ a:hover {
 @media (min-width: 993px) {
     #about-web-img {
         object-fit: cover;
-        width: 600px;
         height: auto;
+        width: 600px;
     }
-    #mobile-nav {
+    #intro {
+        padding-top: 140px;
+    }
+    .content-spacing {
+        padding-top: 100px;
+        width: 50%;
+    }
+    .homepage-spacing {
+        width: 80%;
+    }
+    .mobile-view {
         display: none;
-    }
-    #web-nav {
-        background-color: #F7F7F7;
-        padding-left: 5%;
-        padding-right: 5%;
-        padding-top: 6%;
-        padding-bottom: 0px;
-        position: fixed;
-        display: block;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-    }
-    #web-nav li {
-        color: #000000;
-        list-style-type: none;
-        margin-left: 0;
-        padding-top: 10px;
-        list-style-type: none;
-        text-decoration: none;
-    }
-    #web-nav ul {
-        padding-left: 0;
-        padding-bottom: 20px;
-        list-style-type: none;
-    }
-    #web-nav a {
-        color: black;
-        text-decoration: none;
-        background-image: linear-gradient(#5B83D8, #5B83D8);
-        background-position: 0% 100%;
-        background-repeat: no-repeat;
-        background-size: 0% 2px;
-        transition: background-size .3s;
-    }
-    #web-nav a:hover,
-    #web-nav a:focus {
-        background-size: 100% 3px;
-    }
-    .case-study-content {
-        padding-left: 15%;
-        width: 72%;
-    }
-    .content-mobile {
-        display: none;
-    }
-    .content-web {
-        padding-left: 25%;
-        padding-right: 0%;
     }
 }

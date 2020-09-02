@@ -17,24 +17,39 @@
 
 <body>
     <!-- Navigation for Desktop -->
-    <nav id="web-nav">
-        <h4 class="font-weight-bold">Karena<br />Vongampai</h4>
-        <p>Product Designer</p>
-        <ul class="nav-bar pt-3">
-            <li>
-                <a href="index.html">Projects</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="assets/images/home/karenavongampai-resume.pdf">Resume</a>
-            </li>
-        </ul>
+    <nav class="container-fluid fixed-top py-4 web-view">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-5">
+                <!-- <h5>karena</h5> -->
+            </div>
+            <div class="col"></div>
+            <div class="col-1">
+                <a class="text-dark active" href="index.html">Projects</a>
+            </div>
+            <div class="col-1">
+                <a class="text-dark" href="about.html">About</a>
+            </div>
+            <div class="col-1">
+                <a class="text-dark" href="assets/images/home/karenavongampai-resume.pdf" target="_blank" download>Resume</a>
+            </div>
+            <div class="col"></div>
+        </div>
     </nav>
 
-    <!-- Project Gallery Grid Web Med Size -->
-    <div class="container content-web content-web-lg py-5">
+    <!-- Mobile Intro -->
+    <div id="intro" class="container-fluid text-center homepage-spacing">
+        <div class="row pt-3">
+            <div class="col-sm px-0">
+                <h2>Hi there 👋,<br>I'm Karena Vongampai.</h2>
+                <p>A problem solver, collaborator, explorer, and product designer.</p>
+                <p class="pt-3">↓ <a href="mailto:karenavongampai@gmail.com">Contact me</a> or take a look at some of the work I've done recently!</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Gallery Grid Web Size -->
+    <div class="container-fluid homepage-spacing web-view">
         <!-- Row 1 -->
         <div class="row pt-5">
             <!-- TTO Depreciation Project -->
@@ -47,7 +62,19 @@
                     <p class="grid-p">Demystifying how a property purchase benefits rental property owners at tax time.</p>
                 </div>
             </a>
-            <div class="px-3"></div>
+            <div class="pl-1"></div>
+            <!-- Data In Project -->
+             <a class="col grid" href="data-in.html">
+                <div class="row">
+                    <img class="gallery-border" src="assets/images/home/data-in2.svg" />
+                </div>
+                <div class="row px-3">
+                    <h6 class="pt-3">An effortless tax prep experience</h6>
+                    <p class="grid-p">Scaling and enhancing a no-work experience fueled by automated data entry.
+                    </p>
+                </div>
+            </a>
+            <div class="pl-1"></div>
             <!-- TTO Foreign Tax Credit Project -->
             <a class="col grid" href="foreigntaxcredit.html">
                 <div class="row">
@@ -55,7 +82,7 @@
                 </div>
                 <div class="row px-3">
                     <h6 class="pt-3">Foreign tax credit for investors</h6>
-                    <p class="grid-p">Reducing a complex tax break, down to a simplified and effortless experience.</p>
+                    <p class="grid-p">Reducing a complex tax break down to a simplified and effortless experience.</p>
                 </div>
             </a>
         </div>
@@ -64,9 +91,9 @@
         <div class="py-3"></div>
 
         <!-- Row 2 -->
-        <div class="row">
+        <!-- <div class="row"> -->
             <!-- Data In Project -->
-            <a class="col grid" href="data-in.html">
+            <!-- <a class="col grid" href="data-in.html">
                 <div class="row">
                     <img class="gallery-border" src="assets/images/home/data-in2.svg" />
                 </div>
@@ -76,34 +103,23 @@
                     </p>
                 </div>
             </a>
-            <div class="px-3"></div>
+            <div class="px-3"></div> -->
             <!-- Cost Basis Project -->
-            <a class="col" href="#">
-                <div class="row">
+            <!-- <a class="col" href="#">
+                <div class="row"> -->
                     <!-- <img class="gallery-border" src="assets/images/home/costbasis.svg" /> -->
-                </div>
-                <div class="row px-3">
+                <!-- </div> -->
+                <!-- <div class="row px-3"> -->
                     <!-- <h6 class="pt-3">Proactive help to ensure investors don’t overpay taxes</h6>
                     <p class="grid-p">Helping customers take full benefit over their employee stock sales, to ensure they don't overpay in taxes.
                     </p> -->
-                </div>
-            </a>
-        </div>
-    </div>
-
-    <!-- Mobile Intro
-    <div id="mobile-intro" class="container content-mobile w-90">
-        <div class="row pt-3">
-            <div class="col-sm px-0">
-                <h2>Hi there 👋,<br>I'm Karena Vongampai.</h2>
-                <p>A problem solver, collaborator, explorer, and product designer.</p>
-                <p class="pt-5">↓ <a href="mailto:karenavongampai@gmail.com">Contact me</a> or take a look at some of the work I've done recently!</p>
-            </div>
-        </div>
+                <!-- </div> -->
+            <!-- </a> -->
+        <!-- </div> -->
     </div>
 
     <!-- Project Gallery Grid Mobile -->
-    <div class="container content-mobile pt-3 py-5">
+    <div class="container homepage-spacing pt-3 py-5 mobile-view">
         <!-- TTO Docs Project -->
         <div class="row pb-3">
             <a class="col-sm px-0 grid" href="depreciation.html">
@@ -149,7 +165,7 @@
         </div> -->
 
     <!-- Navigation for Mobile -->
-    <nav id="mobile-nav" class="fixed-bottom container-fluid mt-5">
+    <nav class="fixed-bottom container-fluid mt-5 py-3 mobile-view">
         <div class="row">
             <a class="col-4 mb-0 text-center text-dark" href="index.html">Projects</a>
             <a class="col-4 mb-0 text-center text-dark" href="about.html ">About</a>

@@ -17,24 +17,28 @@
 
 <body>
     <!-- Navigation for Desktop -->
-    <nav id="web-nav">
-        <h4 class="font-weight-bold">Karena<br />Vongampai</h4>
-        <p>Product Designer</p>
-        <ul class="nav-bar pt-3">
-            <li>
-                <a href="index.html">Projects</a>
-            </li>
-            <li>
-                <a href="about.html">About</a>
-            </li>
-            <li>
-                <a href="assets/images/home/karenavongampai-resume.pdf">Resume</a>
-            </li>
-        </ul>
+    <nav class="container-fluid fixed-top py-4 web-view">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-5">
+                <!-- <h6>Karena Vongampai</h6> -->
+            </div>
+            <div class="col"></div>
+            <div class="col-1">
+                <a class="text-dark" href="index.html">Projects</a>
+            </div>
+            <div class="col-1">
+                <a class="text-dark active" href="about.html">About</a>
+            </div>
+            <div class="col-1">
+                <a class="text-dark" href="assets/images/home/karenavongampai-resume.pdf" target="_blank" download>Resume</a>
+            </div>
+            <div class="col"></div>
+        </div>
     </nav>
 
     <!-- About content for larger desktop views -->
-    <div class="container case-study-content">
+    <div class="container content-spacing">
         <div class="row pt-5">
             <h1>About</h1>
         </div>
@@ -50,7 +54,7 @@
     </div>
 
     <!-- Navigation for Mobile -->
-    <nav id="mobile-nav" class="fixed-bottom container-fluid mt-5">
+    <nav class="fixed-bottom container-fluid mt-5 py-3 mobile-view">
         <div class="row">
             <a class="col-4 mb-0 text-center text-dark" href="index.html">Projects</a>
             <a class="col-4 mb-0 text-center text-dark" href="about.html ">About</a>
