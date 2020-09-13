@@ -6,10 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Google Imported Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 
     <!-- Imports Bootstrap Framework -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
     <!-- Links to stylesheet.css -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -31,7 +34,8 @@
                 <a class="text-dark" href="about.html">About</a>
             </div>
             <div class="col-1">
-                <a class="text-dark" href="assets/images/home/karenavongampai-resume.pdf" target="_blank" download>Resume</a>
+                <a class="text-dark" href="assets/images/home/karenavongampai-resume.pdf" target="_blank"
+                    download>Resume</a>
             </div>
             <div class="col"></div>
         </div>
@@ -44,142 +48,241 @@
         <!-- Overview section -->
         <div class="row pt-5">
             <h4>Overview</h4>
-            <p>There are many adjectives that people use to describe taxes, including daunting, tedious, time-consuming, difficult, and painful. Needless to say this isn’t a task many people get excited about. Through the years, TurboTax has learned that
-                part of these negative feelings stem from the burden of gathering tax forms and manually entering their tax data line by line into TurboTax.</p>
-            <p>The ethos of Intuit is “design for delight,” which was the spirit we expressed when offering customers new ways to get their data automatically entered, as well as refreshing the current experience to feel as painless as possible. For over
-                a year, I’ve worked on scrum teams to envision and build an effortless tax prep experience that saves customers time and headache. By showing customers that TurboTax can support them through their tax journey, they’ve shown greater satisfaction
-                and confidence in doing taxes themselves (reflected in higher conversion rates and positive customer feedback).</p>
+            <p>Working at Intuit has been one of the most eye opening experiences I’ve had, and I’m honored to be part
+                of the company’s mission of powering prosperity around the world. After joining this company a few
+                months after graduating from the University of Washington, I’ve been exposed to one of the most daunting
+                financial tasks that every American takes on in January, taxes.
+            </p>
+            <p>There are many adjectives that people use to describe taxes, including difficult, painful, time-consuming
+                and tedious. I’ve sat through numerous research sessions, watching customers use TurboTax to file their
+                return and wait tirelessly to receive one of their biggest paychecks of the year, their refund.
+            </p>
+            <p>One of the most common pain points I’ve observed customers endure is the drudgerous task of typing in
+                values from their tax forms into input fields in TurboTax.
+            </p>
         </div>
+
         <!-- Problem definition section -->
         <div class="row pt-3">
-            <h4>Problem definition</h4>
-            <p>I worked with research and product management to pinpoint what made the process of gathering and entering data into TurboTax so difficult. We reviewed personas, qualitative research findings, quantitative data, and recordings of previous customer
-                research sessions to discover that the origin of this customer pain, came from these characteristics about tax forms:
+            <h4>The problem</h4>
+            <p>“Take a look at Box 1 on your W-2, enter the value in TurboTax.” Okay, this seems like a straight-forward
+                task, but imagine doing this for over 12 fields, and if you have more forms then multiply that by
+                however many forms you have. Not to mention, some forms have several pages and even more values you’ll
+                have to enter. Through research sessions and contextual inquiries, I’ve seen the pain of transposing
+                information often reflected in heavy sighs, water breaks, avoidance of finishing their taxes, and
+                remarks like “this is going to take forever.”
             </p>
-            <ul>
-                <li>Tax forms are delivered through physical and digital channels, leading to difficulty with keeping track of all of them in one organized place.
-                </li>
-                <li>There are no standardized templates for tax forms. They come in different formats depending on who delivered it, and can contain a lot of information that the recipient doesn’t fully understand. This makes entering them even more difficult.
-                </li>
-                <li>Many tax forms are extremely long, majority containing more than 10-12 boxes of information that can take longer than 15 minutes to enter.
-                </li>
-            </ul>
-            <p>All in all, these characteristics lead customers to feel overwhelmed and tired since tax forms are a burden to collect, decipher, and enter.
+            <p>Not only is typing drudgerous, but it’s also extremely error-prone. How often have you mistyped something
+                in a message to a friend, or in an essay? Now imagine the repercussions of a wrong value impacting how
+                much financial return you received for the taxes you paid, forcing you to amend those values and
+                re-file. Accuracy is a necessity when it comes to doing taxes.
             </p>
-        </div>
-        <!-- Vision section -->
-        <div class="row pt-3">
-            <h4>The vision of entering tax info</h4>
-            <p>TurboTax is a historical product, and has been the lead DIY tax prep software for over 30 years, but it has not invested heavilly in improving these entry experiences. For the past year our team has been responsible for creating seamless experiences
-                that allow customers to skip the pain of typing. We envisioned that to be:
-            </p>
-            <ul>
-                <li>A single place where you can store your documents, and upload files to use for your tax prep process.
-                    <ul>
-                        <li>A flexible system that allows you to start here, or anywhere else in the product.
-                        </li>
-                    </ul>
-                </li>
-                <li>A suite of reliable capabilities that allow customers to enter their information however they want.
-                    <ul>
-                        <li>A scalable pattern that invites customers into automated data entry experiences, which can be leveraged for any tax document.</li>
-                        <li>A time-saving opportunity, to save your fingers and eyes from the pain of reading various tax forms.
-                        </li>
-                        <li>The expansion of capabilities for entry of more tax forms, to ensure you can do your taxes your way.
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <p>We pitched these ideas in senior leadership reviews with cross-functional VPs from a variety of consumer group business units and the GM. All in all this vision contributed to one of Intuit’s top strategic efforts.
-            </p>
-            <img src="assets/images/data-in/data-in-vision.svg" class="w-100" />
-        </div>
-        <!-- Technical hurdles -->
-        <div class="row pt-3">
-            <h4>Technical hurdles</h4>
-            <p>With the vision we dreamt of for our customers, we started scoping. It’s important to understand that the capability of automatically entering data requires the cooperation, collaboration, and alignment with a variety of teams. And when I
-                first joined this project, we were a team of 5 with 2 PMs, 2 developers, and 1 designer (me). With limited resources, time, and alignment, we took the big vision down to a couple key items. These key items made up our roadmap.
-            </p>
-            <p>The other issue we faced was that all these experiences needed to be replatformed, meaning these original experiences were built in our legacy tech stack using old (some that haven’t been maintained and are in the process of being deprecated)
-                widget experiences created by centralized teams. The technical lift to reach parity in our newer tech stack, would’ve required triple the amount of engineers, with double the amount of time.
-            </p>
-            <p>We aimed to replatform these experiences, to utilize the new design system, create enhancements, and experiment with new experiences. One important lesson I learned at this point, was to stay adaptable, flexible, and communicative.
+            <p>All in all, the painfully time-consuming task of manually entering information can have negative side
+                effects on a customer’s financial situation. With that in mind, our team at TurboTax re-imagined the way
+                that customers can enter their information with ease and speed.
             </p>
         </div>
-        <!-- Key capabilities -->
-        <div class="row pt-3">
-            <h4>Key capabilities</h4>
-            <p>Based on all the information we identified above, my team and I went through the year delivering key capabilities to craft an effortless and seamless data entry experience.
-            </p>
-        </div>
-        <div class="row pt-3">
-            <h5>Document storage</h5>
-            <p>A single place for customers to add and save their tax documents for years and years, ensuring proper documentation over their files. This helps them stress less about keeping track of paper documents scattered across shoeboxes, desk drawers,
-                etc.
-            </p>
-            <div>
-                <h6>Brainstorm</h6>
-                <p>First, I audited several storage solution apps to identify best practices and gain inspiration. I met regularly with my team to work through the requirements and share design iterations. I worked with paper sketches in whiteboard sessions
-                    with my scrum team, and the central team who owned widgets we would implement into the storage solution.
-                </p>
-            </div>
-            <div>
-                <h6>Final product</h6>
-                <p>Although it isn’t perfect, our team was able to deliver an MVP with an improved UI and experience. We validated these designs through guerrilla tests on the streets, where we approached people and walked them through an inVision prototype.
-                </p>
-                <p>A tradeoff I had to make for this MVP experience was around how accessible the documents were and how documents actually get stored. To round out the experience, I would have loved to work on expanding this storage center’s full potential
-                    to meet our customer’s expectations. One of the biggest lessons I learned was how to work with centralized teams. In this design, I didn't have full creative control over how the widget worked or looked and my engineering team went
-                    through similar realizations with ownership. Together, our team learned that we should keep each other informed and provide constant feedback, to ensure centralized widgets meet the needs of our business unit.
-                </p>
-            </div>
-        </div>
-        <div class="row pt-1">
-            <h5>Document upload and extraction</h5>
-            <p>Because tax forms come in various formats, we’ve seen several customers post and call in, asking whether or not they can upload copies of their tax docs, to have information automatically entered. For certain tax forms, we only offer the ability
-                to import documents from financial institutions. For many, import is magic and helps customers speed through entering info, but for over 50% of our customers, they’re still relying on manually entering their data. We tested and introduced
-                document upload in 3 of the most popular tax forms that customers receive, including W-2, 1098-T, and 1099-R to provide customers with another way to enter data that still avoids manual entry.
-            </p>
-            <div>
-                <h6>Brainstorm</h6>
-                <p>Our team explored several sitemaps, to determine the most logical way to introduce upload as an alternative data entry method. Because of the performance and constraints of the upload widget, we had to be mindful about when it’s right
-                    to show customers the ability to upload a document, rather than relying on something more technologically successful.</p>
-            </div>
-            <div>
-                <h6>Final product</h6>
-                <p>Overall this track of work helped us learn how the best method to enter data, is highly dependent on the customer’s situation and beliefs. As a product team, we’re aware of how the technology performs, but to a customer they’re trying
-                    to use the method that’s most convenient to them (which can be defined by device, form format, etc.). Moving forward, our team plans to explore offering customers the choice to choose how they enter their data, rather than pushing
-                    them into a specific type of data entry method.
-                </p>
-            </div>
-        </div>
-        <div class="row pt-1">
-            <h5>Streamlining the import experience</h5>
-            <p>The import experience in TurboTax allows customers to authenticate into their financial institution, to have tax info pre-populated into their return. The design changes we made in this flow streamlined the experience, to encourage customers
-                to complete their import with little resistance and hesitation. We did this by ensuring that proper context and expectations were set up, to give customers the confidence that we’ll take this burden off their hands.
-            </p>
-            <div>
-                <h6>Brainstorm</h6>
-                <p>The 2 main projects we worked on this past year to streamline the import experience include creating benefit awareness prior to entering the flow, and payoff when customers successfully retrieve information. We brainstormed as many divergent
-                    ideas through sketches, lists of bullet points, etc. to align the team on actual enhancements.
-                </p>
-            </div>
-            <div>
-                <h6>Final product</h6>
-                <p>The final design contradicted older data-in experiences that relied heavily on the explanation of how the technology worked, rather than leading with the benefit. In this final product, we A/B tested an experience where the new design
-                    was able to increase import utilization by 7%. Overall with more customers utilizing our import feature, we noticed an increase in S2C.
-                </p>
-            </div>
-        </div>
-    </div>
 
-    <!-- Navigation for Mobile -->
-    <nav class="fixed-bottom container-fluid mt-5 py-3 mobile-view">
-        <div class="row">
-            <a class="col-4 mb-0 text-center text-dark" href="index.html">Projects</a>
-            <a class="col-4 mb-0 text-center text-dark" href="about.html ">About</a>
-            <a class="col-4 mb-0 text-center text-dark" href="assets/images/home/karenavongampai-resume.pdf" target="_blank" download>Resume</a>
+        <!-- My Role -->
+        <div class="row pt-3">
+            <h4>My Role</h4>
+            <p>For 4 months, I worked on a small team that dedicated time to learning and experimenting with new
+                experiences that would accelerate the distribution and benefit of automated data entry experiences. I
+                led the design for document management experiences, as well as laying the foundation for expanding and
+                scaling automated entry methods into more areas of the product. As the sole designer on the team, I was
+                responsible for taking these experimental insights into a brand new and dedicated scrum team. I worked
+                with product management and development to help inform the 1 year roadmap for our new team, and present
+                our progress and work to senior leadership.
+            </p>
         </div>
-    </nav>
+
+        <!-- Automated Entry Experiences -->
+        <div class="row pt-3">
+            <h4>Automated entry experiences</h4>
+            <p>TurboTax has been the lead DIY tax prep software for over 30 years. With this type of history, it’s
+                exciting to finally see the company invest in a team that will make automated entry (import,
+                upload, image capture), available for more customers’ tax situations.
+            </p>
+            <p>Structurally, customers enter their information into TurboTax on a form by form basis. Our team’s vision
+                is to help remove the burden of manual entry by utilizing a suite of widgets that allow customers to
+                automatically enter their data.
+            </p>
+            <p>To streamline the experience, we also reviewed the end to end experience of bringing tax forms to
+                TurboTax, which is why we also set out to redesign our legacy document storage solution and imagine a
+                more streamlined experience. By recognizing the journey customers have with their tax forms, we were
+                able to envision a future where customers have the flexibility to do their taxes however they choose.
+                But with every idealistic vision comes the realistic need to scope and plan our next steps.
+            </p>
+        </div>
+
+        <!-- Technical Landscape -->
+        <div class="row pt-3">
+            <h4>Balancing the technical landscape against the customer's needs</h4>
+            <p>As the sole designer, I knew that the best way to create impact in a technologically heavy world would be
+                to understand how these capabilities were architectured. I’ve worked with 4 different development teams
+                to dive deep and dissect the shared ownership, benefit, and dependencies our team shared with 3 other
+                development teams. The lesson here is that in order to actually get the company to our 3 year vision, we
+                needed the cooperation, investment, collaboration and alignment of a variety of designers, developers,
+                product managers, and members of leadership.
+            </p>
+        </div>
+
+        <!-- Design Process -->
+        <div class="row pt-3">
+            <h4>Design Process</h4>
+            <p>My design responsibilities were split between delivering updated designs to elevate legacy experiences
+                and strategically exploring where we need to be by the end of the next fiscal year.
+            </p>
+            <p>When it came to updating legacy experiences, I relied heavily on auditing existing experiences, analyzing
+                historical user research, performing competitive analyses to uncover best practices, and incorporating
+                reusable components from our design system. Because this problem is ancient, the pain point and insights
+                have been carried over year over year giving us the opportunity to learn from past efforts.
+            </p>
+            <p>For newer experiences, I went broad by listening and empathizing with real customers, sketching, running
+                design charettes, and guerrilla testing concepts at coffee shops and shopping plazas. I brought a lot of
+                outside-in inspiration to spark excitement about the future of automated data entry.
+            </p>
+        </div>
+
+        <!-- Present Day Impact -->
+        <div class="row pt-3">
+            <h4>Present day impact</h4>
+            <!-- Doc Storage -->
+            <div class="pt-3">
+                <h5>Document storage</h5>
+                <p>I led the re-design of MyDocs—TurboTax’s legacy document storage solution. In the redesign I managed
+                    to uplevel the access point into the product’ first level of navigation to drive awareness and use
+                    at the start of tax prep. This past year, we saw an increase in the amount of users navigating to
+                    this area of product, and uploading documents. The redesign was also mobile-first, to ensure ease of
+                    use while switching devices.
+                </p>
+                <img src="assets/images/data-in/data-in-docstorage.svg" class="w-100 pb-1 pb-md-2" />
+                <p>Although the outcome isn’t perfect, our team managed to land the plane on an MVP solution that still
+                    brought a delightful experience to our customers. The more that we can actively engage and observe
+                    how customers utilize our technology, the more we can use this customer insight to inform our
+                    roadmap of where document management flourishes to.
+                </p>
+            </div>
+            <!-- Streamlining the import experience -->
+            <div>
+                <h5>Streamlining the import experience</h5>
+                <p>Import is known for being one of the magical capabilities that allows customers to enter their tax
+                    information in the snap of their fingers. The ownership of this experience though, is fragmented and
+                    involves other teams which reflects in what customers see and feel. Working with centralized teams
+                    and familiarizing each other with our concerns and goals has helped streamline the experience and
+                    smoothen out any bumps.
+                </p>
+                <p>The first thing we observed when customers went through these experiences was a lack of context,
+                    which resulted in 2 things:
+                </p>
+                <ul>
+                    <li>Abandonment from automated entry</li>
+                    <li>Astonishment at the benefit of actually utilizing import</li>
+                </ul>
+                <p>We wanted to set expectations and see if that would encourage more customers to choose the route of
+                    effortlessly getting their data entered. We A/B tested a context setting screen to determine whether
+                    or not benefit and context messaging would help customers.
+                </p>
+                <img src="assets/images/data-in/data-in-prelude.svg" class="w-100 pb-1 pb-md-2" />
+                <p>This resulted in higher customer confidence to outsource the task to manual entry to TurboTax,
+                    reflected in higher utilization of import and conversion through e-filing. </p>
+            </div>
+            <!-- Testing upload as an alternative entry method -->
+            <div class="row pt-3">
+                <h5>Testing upload as an alternative entry method</h5>
+                <p>Although import may seem like the tried and true automated data entry method, there are several
+                    customers who choose not to use it for a variety of reasons. Because of this, we’ve needed to expand
+                    our suite of automated methods, to meet the point of convenience for customers bringing both
+                    tangible and digital documents to the product. Enter document upload and extraction…
+                </p>
+                <p>We went broad on a variety of ways to introduce document upload as an option for our customers, but
+                    prioritized the customers needs and used technical constraints to deliver a flow that would be A/B
+                    tested. We repeated this exercise for a variety of topics, and are continuing to do so for more tax
+                    forms. This past year, I led the design exploration and implementation of document upload for W-2
+                    and 1099-R.
+                </p>
+                <img src="assets/images/data-in/data-in-1099R.svg" class="w-100 pb-1 pb-md-2" />
+                <p>What we learned from testing upload experiences, was that customers do have an appetite for this, but
+                    the overall implementation requires more investment from development to reduce the constraints and
+                    improve the performance.
+                </p>
+            </div>
+
+            <!-- Future thinking -->
+            <div class="row pt-3">
+                <h4>Future thinking</h4>
+                <p>With the advancement of pre-existing experiences, I also dedicated a decent portion of my time to
+                    imagining the future of automated data entry, which is what our team is focused on building right
+                    now.
+                </p>
+                <p>We first started thinking about how to scale and expand the benefits of automated data entry to more
+                    customers. We held a design sprint to explore all our options and get quick customer feedback on
+                    concepts.
+                </p>
+                <img src="assets/images/data-in/data-in-future.svg" class="w-100 pb-1 pb-md-2" />
+                <p>After holding this design sprint, our team aligned against principles and goals for the year with a
+                    more
+                    concrete idea of how we manifest success. This then led us to the goal of creating reusable patterns
+                    and
+                    assets, to help our teams quickly deliver time-saving opportunities to our customers. Defining a
+                    patternized approach is what’s going to help our team actually deliver an effortless tax prep
+                    experience, where users don’t have to rely on transposing information and dedicating days on end to
+                    do
+                    their taxes.</p>
+                <p>Currently, I'm working on developing a patternized selection experience that's extendable to all tax
+                    forms, to allow customers the ability to choose how they enter their data. I've held design
+                    charettes to get the best thinking from other designers on my team, and go broad on a variety of
+                    options.</p>
+                <img src="assets/images/data-in/data-in-charette.svg" class="w-100 pb-1 pb-md-2" />
+            </div>
+
+            <!-- Final thoughts -->
+            <div class="row pt-3">
+                <h4>Final thoughts</h4>
+                <p>As you can tell, we have a long way to go to reduce the effort it takes to file a tax return, but our
+                    team has remained hopeful through the challenges and unexpected obstacles that we’ve faced. Overall,
+                    this journey has brought a bunch of teams closer together to unite and actually create impactful
+                    experiences.
+                </p>
+                <p>Here are my biggest takeaways:
+                </p>
+                <ul>
+                    <li><b>Make sure design has an eye on the future:</b> As someone who has started leading design for
+                        this
+                        initiative very early in their career, I’ve learned that I can’t just focus on delivering
+                        experiences for right now. It’s important to remember what end to end vision you’re working
+                        towards,
+                        to make sure that every design you work on is a step in the intended direction.
+                    </li>
+                    <li><b>Communication and alignment is key:</b> With the experience of working with centralized
+                        teams, and
+                        a variety of development teams it’s important to recognize the responsibilities and goals your
+                        teammates have. Design has the power to tell the story of a shared vision, and communication
+                        that is
+                        key to being an efficient and impactful designer.
+                    </li>
+                    <li><b>Embrace hardship and ambiguity:</b> I’ve learned that the key to finding clarity, is to show
+                        rather than tell and explain. Through this project, I’ve repeatedly found myself lost and the
+                        best
+                        way to align and resolve issues is to show people my thoughts through mockups, sitemaps,
+                        prototypes
+                        and start asking questions. Rather than waiting on someone else to try and communicate our
+                        thoughts,
+                        it’s better to create working documents we can all look at, to iterate on solutions.
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Navigation for Mobile -->
+        <nav class="fixed-bottom container-fluid mt-5 py-3 mobile-view">
+            <div class="row">
+                <a class="col-4 mb-0 text-center text-dark" href="index.html">Work</a>
+                <a class="col-4 mb-0 text-center text-dark" href="about.html ">About</a>
+                <a class="col-4 mb-0 text-center text-dark" href="assets/images/home/karenavongampai-resume.pdf"
+                    target="_blank" download>Resume</a>
+            </div>
+        </nav>
 </body>
 
 </html>
