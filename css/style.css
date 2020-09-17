@@ -26,6 +26,10 @@ a:hover {
     text-decoration: none;
 }
 
+img {
+    height: auto;
+}
+
 /* Navbar */
 nav {
     background-color: #f7f7f7;
