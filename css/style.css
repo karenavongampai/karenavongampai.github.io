@@ -27,7 +27,7 @@ a:hover {
 }
 
 img {
-    height: auto;
+    align-self: flex-start;
 }
 
 /* Navbar */
@@ -35,29 +35,9 @@ nav {
     background-color: #f7f7f7;
 }
 
-nav a {
-    text-decoration: none;
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .3s;
-}
-
-nav a:hover, .active {
-    background-size: 100% 2px;
-}
-
-nav a:active {
-    background-image: #f7f7f7;
-    color: #f7f7f7;
-}
-
 /* Project gallery image sizing/styling */
 .gallery-border {
     border-radius: 5px 5px 0px 0px;
-    height: auto;
-    width: 100%;
 }
 
 /* Individual project card element */
@@ -94,6 +74,24 @@ nav a:active {
 
 /* Desktop */
 @media (min-width: 993px) {
+    nav a {
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .3s;
+    }
+    
+    nav a:hover, .active {
+        background-size: 100% 2px;
+    }
+    
+    nav a:active {
+        background-image: #f7f7f7;
+        color: #f7f7f7;
+    }
+    
     #about-web-img {
         object-fit: cover;
         height: auto;
