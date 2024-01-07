@@ -16,7 +16,7 @@ h6 {
 }
 
 h1 {
-    font-weight: 800;
+    font-weight: 700;
 }
 
 nav {
@@ -38,6 +38,8 @@ nav a:hover {
 
 a {
     font-family: "Inconsolata", monospace;
+    font-size: 16px;
+    font-weight: 900;
     text-decoration: none;
 }
 
