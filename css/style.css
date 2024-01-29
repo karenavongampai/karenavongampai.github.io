@@ -53,5 +53,6 @@ a {
 /* project css */
 .project-date {
     color: gray;
-    font-style: italic;
+    /* font-weight: 400; */
+    /* font-style: italic; */
 }
