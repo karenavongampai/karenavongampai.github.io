@@ -79,3 +79,10 @@ nav p {
     color: #757575;
     font-size: 20px;
 }
+
+/* button */
+.btn-outline {
+    background-color: #ffffff;
+    color: #0070d8;
+    border-color: #0070d8;
+}
